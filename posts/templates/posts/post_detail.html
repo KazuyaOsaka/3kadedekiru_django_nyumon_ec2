@@ -6,6 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    {{ post_id }}
+    {{ post.title }}
+    <br>
+    {{ post.published }}
+    <br>
+    <img src="{{ post.image.url }}" alt="#" class="img-fluid rounded" style="max-height: 200px;">
+    <br>
+    {{ post.body }}
 </body>
 </html>
